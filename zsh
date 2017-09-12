@@ -1,4 +1,4 @@
-
+vi:syntax=bash
 
 #
 # User configuration sourced by interactive shells
