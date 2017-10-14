@@ -16,4 +16,4 @@ ln -s /home/will/Programming/Projects/bar/target/release/bar bar
 ```
 Now just download the lemonconfig.toml file and place it at ~/.config/lemonhelper/config.toml
 
-![ScreenShot](http://i.imgur.com/yeInRIn.png)
+![ScreenShot](https://i.imgur.com/y1kvUlg.png)
