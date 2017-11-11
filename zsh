@@ -56,17 +56,3 @@ source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="/home/will/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-
-#aliases
-alias q='exit'
-alias install='pacaur -S'
-alias upgrade='pacaur -Syu'
-alias remove='pacaur -R'
-alias prog='cd ~/Programming'
-alias coffee='curl -Ls git.io/hotcoffee | sh'
-alias sleep='systemctl suspend'
-alias clock='tty-clock -c -C 4 -s'
-alias colors='sh ~/Scripts/colorscheme.sh'
-alias weather='curl wttr.in/York?0'
-alias neofetch='neofetch --backend w3m --source wallpaper --size 250px --size 250px'
