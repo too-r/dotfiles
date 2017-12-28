@@ -1,4 +1,4 @@
-#Set mod as the super key and add a binding for alt.
+#set mod as the super key and add a binding for alt.
 set $mod Mod4
 set $alt Mod1
 
@@ -92,8 +92,18 @@ bindsym $mod+Shift+i	resize grow height 10 px or 10 ppt
 assign [class="(?i)chromium"]                       $ws1
 assign [class="(?i)discord"]                       $ws6
 
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #ba8baf #ba8baf #ba8baf #ba8baf 
+client.focused_inactive #616161 #616161 #616161 #616161
+client.unfocused        #616161 #616161 #616161 #616161
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
 #Set gaps
-gaps inner 35
+gaps inner 10
 gaps outer 1
 bindsym $mod+s		gaps inner current plus 5
 bindsym $mod+Shift+s	gaps inner current minus 5
@@ -102,11 +112,11 @@ bindsym $mod+Shift+t	gaps inner all set 35; gaps outer all set 1
 for_window [class="(?i)pavucontrol"] floating enable
 for_window [class="(?i)feh"] floating enable
 for_window [class="(?)volume_slider"] floating enable
-for_window [class="(?)qemu-system-x86_64"] floating enable
+for_window [class="(?i)qemu-system-x86_64"] floating enable
 for_window [class="(?)notepad-termite"] floating enable, move position 1920px 30px
 
 #Disable borders for all windows
-new_window none
+new_window pixel 2
 
 #Apps to run when i3 is started
 #Change keyboard layout
@@ -124,7 +134,7 @@ exec --no-startup-id ~/Scripts/bar
 
 #Screenshot
 bindsym Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png
-bindsym $mod+Print exec --no-startup-id maim -s '/home/will/tmp.png' 
+bindsym $mod+Print exec --no-startup-id maim '/home/will/tmp.png' 
 #Sleep
 bindsym $mod+Mod1+s exec systemctl suspend
 #Playerctl bindings

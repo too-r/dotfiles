@@ -15,5 +15,3 @@ mkdir ~/Scripts && cd ~/Scripts
 ln -s /home/will/Programming/Projects/bar/target/release/bar bar
 ```
 Now just download the lemonconfig.toml file and place it at ~/.config/lemonhelper/config.toml
-
-![ScreenShot](https://i.imgur.com/y1kvUlg.png)
