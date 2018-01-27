@@ -1,6 +1,6 @@
 set nocompatible
 
-call plug#begin('~/.ivm/plugged')
+call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
