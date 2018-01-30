@@ -1,17 +1,16 @@
-vi:syntax=dosini
 [colors]
 # Base16 Default Dark
 # Author: Chris Kempson (http://chriskempson.com)
 
-foreground      = #d8d8d8
-foreground_bold = #e8e8e8
-cursor          = #e8e8e8
+foreground      = #9e9e9e
+foreground_bold = #9e9e9e
+cursor          = #9e9e9e
 background      = #1b1b1b
 
 # 16 color space
 
 # Black, Gray, Silver, White
-color0  = #181818
+color0  = #1b1b1b
 color8  = #585858
 color7  = #d8d8d8
 color15 = #f8f8f8
@@ -48,7 +47,6 @@ color19 = #383838
 color20 = #b8b8b8
 color21 = #e8e8e8
 
-
 [options]
-font = Hack 10
+font = Fira Mono 10.5
 cursor_shape = underline
