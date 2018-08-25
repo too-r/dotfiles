@@ -111,10 +111,10 @@ hc keybind $Mod-i jumpto urgent
 
 # misc keybindings
 # playerctl
-hc keybind $Mod-Left playerctl previous
-hc keybind $Mod-Right playerctl next
-hc keybind $Mod-Up playerctl play
-hc keybind $Mod-Down playerctl pause
+hc keybind $Mod-Left spawn playerctl previous
+hc keybind $Mod-Right spawn playerctl next
+hc keybind $Mod-Up spawn playerctl play
+hc keybind $Mod-Down spawn playerctl pause
 
 # screenshot
 hc keybind $Mod-Print spawn maim -s | xclip -selection clipboard -t image/png
