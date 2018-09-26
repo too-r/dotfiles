@@ -15,7 +15,7 @@ export PATH=$PATH:/home/will/Programming/Projects/pios/gcc-arm-none-eabi-7-2017-
 ### POWERLINE #
 ###############
 POWERLEVEL9K_MODE='awesome-fontconfig'
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 POWERLEVEL9K_HIDE_BRANCH_ICON=true
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon background_jobs dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv)
@@ -76,11 +76,16 @@ export LESS_TERMCAP_us=$'\e[34m'
 alias ssleep='systemctl suspend'
 alias clock='tty-clock -c -C 4 -s'
 alias colors='sh ~/Scripts/colorscheme.sh'
-alias neofetch='neofetch --backend w3m --source wallpaper --size 250px --size 250px'
+alias neofetch='neofetch --backend w3m --source wallpaper --size 250px --size 250px -s'
 alias objdump='objdump -M intel'
 alias hc='herbstclient'
 
 function paste() {
     local file=${1:-/dev/stdin}
     curl --data-binary @${file} https://paste.rs
+}
+
+function udiff() {
+    git diff > diff.txt && cat diff.txt | paste
+    rm diff.txt
 }
